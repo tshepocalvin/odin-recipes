@@ -1,0 +1,160 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: rgb(236, 237, 238);
+}
+
+/* Mobile First Approach */
+
+body{
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    background-color: rgb(236, 237, 238);
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+/* Nav */
+
+.nav{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+}
+.nav-item{
+    width: 50%;
+    padding: 10px;
+}
+.nav-links{
+    text-align: end;
+}
+.nav-links a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: rgb(241, 168, 32);
+    border-radius: 5px;
+    display: inline-block;
+    width: 70px;
+}
+
+/* Nav End*/
+
+
+.recipe-image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+h3{
+    margin: 20px 0px;
+}
+
+ul{
+    padding: 10px;
+    list-style-type: none;
+}
+
+ul h4{
+    margin: 10px 0px;
+}
+
+ul li{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+ol{
+    padding: 20px;
+}
+ol li{
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+.footer{
+    text-align: center;
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.copyright-text{
+    margin-bottom: 5px;
+}
+
+.footer-socials h3{
+    margin-bottom: 5px;
+}
+
+.footer li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* Laptop Design */
+
+@media ( min-width: 769px){
+    body{
+        padding: 0px 50px 0px 50px;
+    }
+    .recipe-image{
+        width: 600px;
+        height: auto;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .footer-item{
+        width: 50%;
+    }
+    .footer-item h3{
+        margin: 0px;
+    }
+    .footer{
+        display: flex;
+        text-align: start;
+    }
+}
+ /* Large Laptop */
+
+ @media (min-width:1025px){
+    .recipe-image{
+        width: 729px;
+        height: auto;
+    }
+ }
+
+/* 4k Design */
+
+@media (min-width: 1441px){
+    body{
+        width: 70%;
+        margin: auto;
+    }
+    .recipe-image{
+        width: 729px;
+        height: auto;
+    }
+}
